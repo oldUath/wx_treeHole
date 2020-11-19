@@ -34,6 +34,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    user:{},//后台返回的用户全部信息
+    userInfo: [],//服务器获取的信息
   }
 })
