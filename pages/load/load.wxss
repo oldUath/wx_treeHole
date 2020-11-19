@@ -1,1 +1,21 @@
 /* pages/load/load.wxss */
+.mai{
+  width: 80%;
+  height: 300rpx;
+  margin-top: 350rpx;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.mai button{
+  width: 70%;
+  height: 80rpx;
+  background-color: #04be04;
+  border-radius: 10rpx;
+  color:white;
+}
+.txt{
+  width: 100%;
+  color: #8a8a8a;
+  text-align: center;
+  margin-top:30rpx ;
+}

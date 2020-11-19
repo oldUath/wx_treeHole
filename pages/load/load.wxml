@@ -1,2 +1,8 @@
 <!--pages/load/load.wxml-->
-<text>登录页面</text>
+
+<!-- 需要使用 button 来授权登录 -->
+<view wx:if="{{canIUse}}" class="mai">
+  <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+  <view class="txt">欢迎使用树洞，我们需要一些你的个人信息包括微信昵称，头像等</view>
+</view>
+<view wx:else>请升级微信版本</view>
