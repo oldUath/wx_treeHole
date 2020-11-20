@@ -1,1 +1,44 @@
 /* pages/login/login.wxss */
+.first{
+  background-color: #f2f2f2;
+  width: 90%;
+  height: 80rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 60rpx;
+  padding-left: 20rpx;
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+
+}
+
+.second{
+  background-color: #f2f2f2;
+  width: 90%;
+  height: 80rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50rpx;
+  padding-left: 20rpx;
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+}
+.login{
+  background-color: red;
+  width: 90%;
+  height: 80rpx;
+  margin: 40rpx 5%;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 40rpx;
+  color: white;
+}
+input{
+  width: 100%;
+  height: 100%;
+}
+.regist{
+  margin: 0 30rpx;
+}

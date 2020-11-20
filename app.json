@@ -1,9 +1,9 @@
 {
   "pages":[
-    "pages/enroll/enroll",
-
     "pages/load/load",
+
     "pages/login/login",
+    "pages/enroll/enroll",
     "pages/square/square",
     "pages/mine/mine",
     "pages/commit/commit",

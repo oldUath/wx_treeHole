@@ -1,2 +1,15 @@
 <!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view>
+  <view class="first">
+    <input type="text" placeholder="请输入用户名" /> 
+  </view>
+  <view class="second">
+    <input type="password" placeholder="请输入密码" />
+  </view>
+  <view class="login" bindtap="login">登录</view>
+  <view>
+    <text class="regist" bindtap="toRegist">没有账号？点击注册</text>
+  </view>
+
+</view>
+

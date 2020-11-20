@@ -26,9 +26,8 @@ Page({
 //点击跳转到登录页面（也是注册的上一页）
   sigin:function(e){
     console.log(this.data)
-    wx.navigateBack({
-      // delta的值控制返回到上面第几个页面
-      delta: 1
+    wx.redirectTo({
+      url: '/pages/login/login'
     })
   },
   

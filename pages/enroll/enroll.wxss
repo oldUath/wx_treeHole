@@ -22,7 +22,7 @@ input{
 .second{
   background-color: #f2f2f2;
   width: 90%;
-  height: 90rpx;
+  height: 80rpx;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 30rpx;
