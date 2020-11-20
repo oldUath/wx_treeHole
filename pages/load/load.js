@@ -8,8 +8,8 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //跳转到下一个页面
-  next:function(){
-    console.log('userInfo',getApp().globalData.userInfo);
+  next: function () {
+    console.log('userInfo', getApp().globalData.userInfo);
     wx.redirectTo({
       url: '/pages/login/login'
     })
@@ -18,20 +18,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that =this;
+    var that = this;
     // 加载中的样式
     wx.showLoading({
       title: '加载中',
     });
-    
+
     // 计时器清除加载样式
-    setTimeout(function(){
+    setTimeout(function () {
       wx.hideLoading({
         complete: (res) => {},
       })
-    },600);
+    }, 600);
     wx.login({
-      success (res) {
+      success(res) {
         if (res.code) {
           //发起网络请求
           // wx.request({
@@ -43,11 +43,11 @@ Page({
 
           // 查看是否授权
           wx.getSetting({
-            success (res){
+            success(res) {
               if (res.authSetting['scope.userInfo']) {
                 // 已经授权，可以直接调用 getUserInfo 获取头像昵称
                 wx.getUserInfo({
-                  success: function(res) {
+                  success: function (res) {
                     // 将获取的全局信息存入到全局变量中
                     getApp().globalData.userInfo = res.userInfo;
                     console.log('11', res.userInfo)
@@ -63,14 +63,13 @@ Page({
         }
       }
     })
-
   },
-  bindGetUserInfo (e) {
+  bindGetUserInfo(e) {
     getApp().globalData.userInfo = e.detail.rawData;
-    console.log(e.detail.rawData )
-    if(e.detail.rawData== undefined){
+    console.log(e.detail.rawData)
+    if (e.detail.rawData == undefined) {
 
-    }else{
+    } else {
       this.next();
     }
   },

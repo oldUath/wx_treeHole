@@ -1,2 +1,19 @@
 <!--pages/enroll/enroll.wxml-->
-<text>pages/enroll/enroll.wxml</text>
+<view>
+  <view class="first">
+    <input placeholder="用户名" type="text" bindinput="userNameInput"></input>
+  </view>
+  <view class="second">
+    <input placeholder="手机号" type="number" bindinput="phoneNumberInput"></input>
+  </view>
+  <view class="second" >
+  <input placeholder="密码" type="password" bindinput="passwordInput"></input>
+  </view>
+  <view class="second">
+    <input placeholder="确认密码" bindinput="passwordAck" type="password"></input>
+  </view>
+  <view class="click" bindtap="regist">注册</view>
+  <view class="dian">
+    <text bindtap="sigin">已注册，点击登录</text>
+  </view>
+</view>
