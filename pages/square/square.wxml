@@ -1,2 +1,4 @@
 <!--pages/square/square.wxml-->
 <text>pages/square/square.wxml</text>
+<!-- 引入底部菜单栏 -->
+<include src="/pages/bottom_menu/bottom_menu" />
