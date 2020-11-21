@@ -86,7 +86,9 @@ Page({
         success (res) { }
       });
     }else{
-      console.log('注册成功')
+      //把注册的用户存储到全局变量中
+      getApp().globalData.user = that.data;
+      console.log( "注册成功")
     }
 
 

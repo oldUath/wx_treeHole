@@ -1,10 +1,10 @@
 <!--pages/login/login.wxml-->
 <view>
   <view class="first">
-    <input type="text" placeholder="请输入用户名" /> 
+    <input type="text" placeholder="请输入用户名" bindinput="userNameInput"/> 
   </view>
   <view class="second">
-    <input type="password" placeholder="请输入密码" />
+    <input type="password" placeholder="请输入密码" bindinput="passwordInput"/>
   </view>
   <view class="login" bindtap="login">登录</view>
   <view>
