@@ -5,9 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    detail:""
   },
+  bindTextAreaInput:function(e){
+    this.data.detail=e.detail.value
+    // console.log(this.data.detail)
+  },
+  send:function(e){
+    wx.showLoading({
+      title: '发送中',
+      mask: true,
+    });
+    //与服务器进行交互....
 
+
+    setTimeout(function(){
+      wx.hideLoading({
+      })
+    },1000)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -1,1 +1,27 @@
 /* pages/commit/commit.wxss */
+page{
+  background-color: #EFEFEF;
+}
+.textarea{
+  width: 100%;
+  background-color: white;
+}
+.textInput{
+  width: 96%;
+  height: 500rpx;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.send{
+  background-color: #ED5564;
+  width: 84%;
+  height: 80rpx;
+  margin: 30rpx 8%;
+  text-align:center;
+  line-height: 80rpx;
+  font-size: 46rpx;
+  color: white;
+  border-radius: 8rpx;
+}

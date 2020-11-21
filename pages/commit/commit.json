@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor":"#F2F2F2",
+  "navigationBarTextStyle":"black",
+  "navigationBarTitleText": "发布树洞"
 }

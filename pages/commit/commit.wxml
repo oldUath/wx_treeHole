@@ -1,2 +1,5 @@
 <!--pages/commit/commit.wxml-->
-<text>pages/commit/commit.wxml</text>
+<view class="textarea">
+  <textarea placeholder="发布新树洞吧" class="textInput" maxlength="-1" bindinput="bindTextAreaInput"></textarea>
+</view>
+<view class="send" bindtap="send">发送</view>
