@@ -1,4 +1,29 @@
 <!--pages/square/square.wxml-->
-<text>pages/square/square.wxml</text>
+<scroll-view scroll-y="true" class="scbg">
+<block wx:for="{{list}}" wx:for-index="index" wx:for-item="item" >
+  <view class="box">
+    <view class="userInfo">
+      <image src='{{item.face_url}}'></image>
+      <view class="person">
+        <view class="showname">
+          <text>{{item.name}}</text>
+        </view>
+        <view class="showtime">
+          <text>{{item.time}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="content">
+      <text>{{item.content}}</text>
+    </view>
+    <view class="like">
+      <image src="/images/wx_zan1.png"></image>
+      <text class="num">{{item.likenum}}</text>
+    </view>
+  </view>
+</block>
+</scroll-view>
+
+
 <!-- 引入底部菜单栏 -->
 <include src="/pages/bottom_menu/bottom_menu" />

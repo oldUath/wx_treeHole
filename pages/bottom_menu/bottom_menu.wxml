@@ -1,12 +1,12 @@
 <!--pages/bottom_menu/bottom_menu.wxml-->
 <view class="bottomrow">
   <view class="bottomtab">
-    <text class="bottomtabText">广场</text>
+    <text class="bottomtabText" style="color:{{yes}}">广场</text>
   </view>
   <view class="centerimg">
     <image class="bottomImg" src="/images/wx_add.png"></image>
   </view>
   <view class="bottomtab">
-    <text class="bottomtabText">我的</text>
+    <text class="bottomtabText" style="color:{{no}}">我的</text>
   </view>
 </view>

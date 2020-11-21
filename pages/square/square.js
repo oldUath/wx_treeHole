@@ -5,7 +5,37 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    yes:"black",
+    no:"#9DA0A5",
+    list:[
+      {
+        face_url:"/images/wx_add.png",
+        name:"dong之一",
+        time:"2020-5-9 20:50:22",
+        content:"我叫董志洋基督教佛大祭司积分就是打开雷锋精神龙卷风立刻就的方法是是发",
+        likenum:99
+      },{
+        face_url:"/images/wx_add.png",
+        name:"111",
+        time:"2020-5-9 20:52:22",
+        content:"我叫董dfsdfsdf基督教佛大祭司积分就是打开雷锋精神龙卷风立刻就的方法是是发",
+        likenum:55
+      },{
+        face_url:"/images/wx_add.png",
+        name:"haiyang",
+        time:"2020-8-9 20:50:22",
+        content:`我dfdfdfddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd司积分就是打开雷锋精神龙卷风立刻就的方法是
+        
+        是发`,
+        likenum:93
+      },{
+        face_url:"/images/wx_zan1.png",
+        name:"dong之一",
+        time:"2020-5-9 20:50:22",
+        content:"我叫董志洋基督教佛大祭司积分就是打开雷锋精神龙卷风立刻就的方法是是发",
+        likenum:99
+      },
+    ]
   },
 
   /**

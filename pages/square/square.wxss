@@ -1,2 +1,67 @@
 /* pages/square/square.wxss */
-@import "/pages/bottom_menu/bottom_menu"
+@import "/pages/bottom_menu/bottom_menu";
+
+page{
+  background-color:#EFEFEF ;
+}
+.scbg{
+  background-color: #EFEFEF;
+  width: 100%;
+  height: 91%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.box{
+  width: 100%;
+  background-color: white;
+  padding-top: 30rpx;
+  border-bottom: 20rpx solid #efefef;
+}
+.userInfo image{
+  width: 130rpx;
+  height: 130rpx;
+  padding-right:20rpx ;
+}
+.userInfo{
+  height: 150rpx;
+  margin-left: 4%;
+  margin-right: 4%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.preson{
+  display: flex;
+
+}
+.showname {
+  font-size: 40rpx;
+  color: blue;
+}
+.showtime{
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  color:#5E5D5D ;
+}
+
+.content{
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx solid #cccccc;
+  word-wrap: break-all;
+}
+.like{
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+
+}
+.like image{
+  width: 40rpx;
+  height: 40rpx;
+  padding: 0 10rpx;
+}
