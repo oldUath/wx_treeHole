@@ -1,2 +1,24 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<scroll-view scroll-y="true" class="scv">
+  <view class="person">
+    <image src='{{list[0].face_url}}'></image>
+    <view class="name">{{list[0].name}}</view>
+  </view>
+  <block wx:for="{{list}}" wx:for-index="index" wx:for-item="item" >
+    <view class="self_content">
+      <view class="content">
+        <text>{{item.content}}</text>
+        <view class="showtime">
+            <text>{{item.time}}</text>
+          </view>
+      </view>
+      <view class="like">
+        <image src="/images/wx_zan1.png"></image>
+        <text class="num">{{item.likenum}}</text>
+        <view class="delete">删除</view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+
+<include src="/pages/bottom_menu/bottom_menu" />

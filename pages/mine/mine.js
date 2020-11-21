@@ -5,8 +5,54 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    yes:"#9DA0A5",
+    no:"black",
+    list:[
+      {
+        face_url:"/images/wx_add.png",
+        name:"dong之一",
+        time:"2020-5-9 20:50:22",
+        content:"我叫董志洋基督教佛大祭司积分就是打开雷锋精神龙卷风立刻就的方法是是发",
+        likenum:99
+      },{
+        face_url:"/images/wx_add.png",
+        name:"111",
+        time:"2020-5-9 20:52:22",
+        content:"我叫董dfsdfsdf基督教佛大祭司积分就是打开雷锋精神龙卷风立刻就的方法是是发",
+        likenum:55
+      },{
+        face_url:"/images/wx_add.png",
+        name:"haiyang",
+        time:"2020-8-9 20:50:22",
+        content:`我dfdfdfddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd司积分就是打开雷锋精神龙卷风立刻就的方法是是发`,
+        likenum:93
+      },{
+        face_url:"/images/wx_zan1.png",
+        name:"dong之一",
+        time:"2020-5-9 20:50:22",
+        content:"我叫董志洋基督教佛大祭司积分就是打开雷锋精神龙卷风立刻就的方法是是发",
+        likenum:99
+      },
+    ]
   },
+
+
+  first_select:function(e){
+    wx.redirectTo({
+      url: '/pages/square/square'
+    })
+  },
+  second_select:function(e){
+    wx.navigateTo({
+      url: '/pages/commit/commit'
+    })
+  },
+  three_select:function(e){
+    wx.redirectTo({
+      url: '/pages/mine/mine'
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面加载

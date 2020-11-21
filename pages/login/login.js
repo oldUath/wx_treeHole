@@ -39,7 +39,9 @@ Page({
         success (res) { }
       });
     }else{
-      console.log('登录成功')
+      wx.redirectTo({
+        url: '/pages/square/square'
+      })
     }
 
   },
