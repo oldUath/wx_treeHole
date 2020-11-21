@@ -24,9 +24,7 @@ Page({
         face_url:"/images/wx_add.png",
         name:"haiyang",
         time:"2020-8-9 20:50:22",
-        content:`我dfdfdfddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd司积分就是打开雷锋精神龙卷风立刻就的方法是
-        
-        是发`,
+        content:`我dfdfdfddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd司积分就是打开雷锋精神龙卷风立刻就的方法是是发`,
         likenum:93
       },{
         face_url:"/images/wx_zan1.png",
@@ -38,6 +36,26 @@ Page({
     ]
   },
 
+
+  
+  first_select:function(e){
+    wx.redirectTo({
+      url: '/pages/square/square'
+    })
+  },
+  second_select:function(e){
+    wx.navigateTo({
+      url: '/pages/commit/commit'
+    })
+  },
+  three_select:function(e){
+    wx.redirectTo({
+      url: '/pages/mine/mine'
+    })
+  },
+
+
+  
   /**
    * 生命周期函数--监听页面加载
    */
